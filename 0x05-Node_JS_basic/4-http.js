@@ -1,6 +1,6 @@
 const http = require('http');
 
-const PORT = 1245;
+const port = 1245;
 
 const app =  http.createServer((req, res) => {
   res.statusCode = 200;
@@ -8,8 +8,6 @@ const app =  http.createServer((req, res) => {
   res.end('Hello Holberton School!');
 });
 
-app.listen(PORT, () => {
-  console.log(`server listening on port ${PORT}`);
-})
+app.listen(port);
 
 module.exports = app;
